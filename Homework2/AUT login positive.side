@@ -1,0 +1,95 @@
+{
+  "id": "c1313b62-54a8-4239-833e-b27d5f18c274",
+  "version": "2.0",
+  "name": "AUT login positive",
+  "url": "http://poll-app7-20210223.softacad.bg/polls",
+  "tests": [{
+    "id": "93a07f49-7acf-47f4-ba4a-a697231a0cbb",
+    "name": "Untitled",
+    "commands": [{
+      "id": "659867d5-d529-4f2e-8d3a-9cdc794dbe95",
+      "comment": "",
+      "command": "open",
+      "target": "http://poll-app7-20210223.softacad.bg/polls",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37978396-66b7-42b0-b245-22768473aed7",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "93567006-67f5-48bb-a2bc-0245782bfafc",
+      "comment": "",
+      "command": "type",
+      "target": "id=usernameOrEmail",
+      "targets": [],
+      "value": "normalUser1"
+    }, {
+      "id": "58785840-2690-45bf-a8f4-89b6afbbf82f",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [],
+      "value": "123456"
+    }, {
+      "id": "ee21c2b1-9ae0-4e94-914f-391ec86f7b32",
+      "comment": "",
+      "command": "click",
+      "target": "name=login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "996b6bba-f370-4d61-a91e-ed3bce2ef189",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.oi-person",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fce95209-9a91-4ce6-97c2-6e6e1b65f1f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.oi-person",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d3643a2-f16e-4c0d-a03a-4058b4e9372c",
+      "comment": "",
+      "command": "click",
+      "target": "name=logout-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5155345e-f7e5-4386-a083-67c2ec5eac49",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=login",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "26b18aa0-f097-43be-9d81-006cb3a9cad8",
+    "name": "login positive",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "475ab26f-4188-40ca-b700-35485cddaf98",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["93a07f49-7acf-47f4-ba4a-a697231a0cbb"]
+  }, {
+    "id": "3164393e-8812-4056-b4b4-616f318b19bc",
+    "name": "Logins",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["26b18aa0-f097-43be-9d81-006cb3a9cad8"]
+  }],
+  "urls": ["http://poll-app7-20210223.softacad.bg/polls"],
+  "plugins": []
+}
